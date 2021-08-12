@@ -11,3 +11,4 @@ Run `npm i` to make sure every dependency is installed
 1. Run `npm start` to start the server
 2. Go to /dashboard route by simply typing `/dashboard` at the end of the web link
 3. On the sidebar, click on the _Guest Portal_
+4. Type in the booking code to start using the features
