@@ -637,8 +637,20 @@
   "topbar.viewAll": "View All",
   "topbar.viewCart": "View Cart",
   "topbar.totalPrice": "Total Price",
+  "custApp.guestDetails": "Guest Details",
   "custApp.guestPortal": "Guest Portal",
   "custApp.yourBookingCode": "Your Booking Code",
   "custApp.failValidation": "Should be combination of numbers & alphabets",
-  "custApp.failFetching": "Booking code not identified"
+  "custApp.failFetching": "Booking code not identified",
+  "custApp.arrivalTimeHelper": "--:-- (please set your arrival time)",
+  "custApp.arrivalSetSuccess": "Arrival time successfully set",
+  "custApp.arrivalSetFail": "Failed to set arrival time",
+  "custApp.guestDetailsHi": "Hi, ",
+  "custApp.guestDetailsThankYou": "Thank you for booking with Bukit Vista. Here are the details of your current booking: ",
+  "custApp.guestDetailsProperty": "Property name: ",
+  "custApp.guestDetailsCheckIn": "Check in date: ",
+  "custApp.guestDetailsCheckOut": "Check out date: ",
+  "custApp.guestDetailsArrival": "Arrival time: ",
+  "custApp.buttonGo": "Go",
+  "custApp.buttonOK": "OK"
 }

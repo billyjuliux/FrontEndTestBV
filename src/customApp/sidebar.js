@@ -1,7 +1,7 @@
 const options = [
   {
     key: 'guestPortal',
-    label: 'custApp.guestPortal'
+    label: "custApp.guestPortal"
   }
 ];
 export default options;
