@@ -80,13 +80,12 @@ class GuestPortal extends Component{
                 // display helper text when no arrival time has been set
                 if (responseData.arrival_time === ""){
                   document.getElementById("arrival-time").innerHTML = custAppDict["custApp.arrivalTimeHelper"];
-                  document.getElementById("time-picker").style.opacity = 1;
                 }
                 else{ // display the arrival time otherwise
                   document.getElementById("arrival-time").innerHTML = responseData.arrival_time;
                   document.getElementById("arrival-time-edit-message").style.opacity = 0;
-                  document.getElementById("time-picker").style.opacity = 0;
                 }
+                document.getElementById("time-picker").style.opacity = 1;
               }
             }
             
