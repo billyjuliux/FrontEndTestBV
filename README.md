@@ -11,4 +11,7 @@ Run `npm i` to make sure every dependency is installed
 1. Run `npm start` to start the server
 2. Go to /dashboard route by simply typing `/dashboard` at the end of the web link
 3. On the sidebar, click on the _Guest Portal_
-4. Type in the booking code to start using the features
+
+## Features
+1. To show booking details, type in booking code in the textbox then click the button _Go_ next to it.
+2. To change arrival time, click on the time picker located in the very bottom of the page, select a particular time, then click the button _OK_ located at the bottom of the time picker.

@@ -37,8 +37,7 @@ class GuestPortal extends Component{
               for (let i = 0, len = inputString.length; i < len; i++) {
                 let code = inputString.charCodeAt(i);
                 if (!(code > 47 && code < 58) && // numeric (0-9)
-                    !(code > 64 && code < 91) && // upper alpha (A-Z)
-                    !(code > 96 && code < 123)) { // lower alpha (a-z)
+                    !(code > 64 && code < 91) ) { // upper alpha (A-Z)
                   document.getElementById("fail-message").style.opacity = 1;
                   document.getElementById("fail-message").innerHTML = custAppDict["custApp.failValidation"];
                   failValidation = true;
@@ -54,6 +53,9 @@ class GuestPortal extends Component{
 
             // continue to fetch if validation successed
             if (!failValidation){
+              // show the loader
+              document.getElementById("loader").style.opacity = 1;
+
               let responseValid = true;
               await fetch('https://glacial-fortress-60211.herokuapp.com/https://bv-online-assessment.herokuapp.com/api/bookings/' + inputString)
               .then(response => response.json())
@@ -65,6 +67,9 @@ class GuestPortal extends Component{
                 document.getElementById("fail-message").innerHTML = custAppDict["custApp.failFetching"];
                 responseValid = false;
               });
+
+              // close the loader
+              document.getElementById("loader").style.opacity = 0;
 
               // if booking code exists, display details
               if (responseValid){
@@ -90,6 +95,11 @@ class GuestPortal extends Component{
             }
             
           }}>{custAppDict["custApp.buttonGo"]}</button>
+
+          <br/><br/>
+
+          <div id="loader"></div>
+
         </Center>
 
         <br/><br/><br/>
